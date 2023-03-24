@@ -1,0 +1,32 @@
+{
+  "name": "bible-crossref",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/bible-crossref.umd.cjs",
+  "module": "./dist/bible-crossref.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext .js",
+    "format": "prettier . --write",
+    "preview": "vite preview"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/bible-crossref.js",
+      "require": "./dist/bible-crossref.umd.cjs"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.7",
+    "vite": "^4.2.1"
+  }
+}
