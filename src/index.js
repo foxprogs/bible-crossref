@@ -1,1 +1,1 @@
-export { get } from "./reference";
+export { getByBC, getByBCV } from "./reference";

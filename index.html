@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <script type="module">
+    import { getByBCV, getByBC } from './src/index.js'
+    function ready() {
+      const input = document.querySelector("#input")
+      const button = document.querySelector("#button")
+      const result1 = document.querySelector("#result1")
+      const result2 = document.querySelector("#result2")
+      button.addEventListener('click', () => {
+        const ref = input.value
+        const [book, chapter, verse] = ref.split(' ')
+        result1.innerHTML = JSON.stringify(getByBCV({ book, chapter, verse }), null, 2)
+        result2.innerHTML = JSON.stringify(getByBC({ book, chapter }), null, 2)
+      })
+    }
+    document.addEventListener("DOMContentLoaded", ready);
+  </script>
+</head>
+
+<body>
+  <input id="input" value="gen 1 1" placeholder="gen 1 1" />
+  <br>
+  <button id="button">Get cross references</button>
+  <div>getByBCV</div>
+  <pre id="result1"></pre>
+  <div>getByBC</div>
+  <pre id="result2"></pre>
+</body>
+
+</html>

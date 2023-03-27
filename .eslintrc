@@ -7,7 +7,7 @@
   },
   "parserOptions": {
     "sourceType": "module",
-    "ecmaVersion": 2015
+    "ecmaVersion": "latest"
   },
   "rules": {
     "prettier/prettier": "error"
