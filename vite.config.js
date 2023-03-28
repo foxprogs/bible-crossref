@@ -14,20 +14,12 @@ const getPackageNameCamelCase = () => {
   }
 };
 
-// const fileName = {
-//   cjs: `${getPackageName()}.cjs`,
-//   es: `${getPackageName()}.js`,
-// };
-
-// const formats = Object.keys(fileName);
-
 export default defineConfig({
   base: "./",
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.js"),
       name: getPackageNameCamelCase(),
-      // formats,
       fileName: getPackageName(),
     },
   },

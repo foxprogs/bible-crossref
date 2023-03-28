@@ -1,8 +1,26 @@
 {
-  "name": "bible-crossref",
+  "name": "@texttree/bible-crossref",
   "version": "0.0.1",
   "license": "MIT",
   "private": false,
+  "author": "TextTree.org",
+  "description": "",
+  "keywords": [
+    "ocl",
+    "bible"
+  ],
+  "url": "https://github.com/texttree/bible-crossref",
+  "homepage": "https://github.com/texttree/bible-crossref#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/texttree/bible-crossref.git"
+  },
+  "bugs": {
+    "url": "https://github.com/texttree/bible-crossref/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "files": [
     "dist"
