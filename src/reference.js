@@ -16,7 +16,8 @@ export const getByBCV = ({ book, chapter, verse }) => {
   if (!books.includes(book)) {
     throw new Error("Incorrect book code");
   }
-  return db?.[book]?.[parseInt(chapter)]?.[parseInt(verse)] ?? [];
+  const result = db?.[book]?.[parseInt(chapter)]?.[parseInt(verse)];
+  return result ? result : [];
 };
 
 /**
