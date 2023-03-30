@@ -49,8 +49,6 @@
 
 ## About The Project
 
-<img src="https://github.com/texttree/bible-crossref/raw/master/logo.svg" alt="" width="100%">
-
 Description
 
 **Purpose**
